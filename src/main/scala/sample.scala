@@ -13,7 +13,7 @@ object sample {
       .agg(sum($"Transaction_amount").alias("Transaction_amount"))//.sum("Transaction_amount").alias("Transaction_amount")
       .orderBy(desc("Transaction_amount")).limit(1)//.take(1)
     df2.show()
-   
+
   }
 
 }
